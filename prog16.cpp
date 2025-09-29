@@ -99,12 +99,26 @@ int main()
     pacoteIP p1;
     sessaoTCP s1;
 
-    s1.DefinirNumeroSessao(0);
-    s1.pacote[0].definirEnderecoRemetente(0);
-    s1.pacote[0].definirEnderecoDestinatario(0);
-    s1.pacote[0].definirPayload(0);
-    s1.pacote[0].definirCRC(0);
-    s1.pacote[0].definirLength(0);
+    s1.DefinirNumeroSessao(1);
+	printf("Numero da Sessao: %d\n", s1.ObterNumeroSessao());
+    s1.pacote[0].definirEnderecoRemetente(100);
+	printf("Endereco Remetente: %d\n", s1.pacote[0].obterEnderecoRemetente());
+    s1.pacote[0].definirEnderecoDestinatario(19216801);
+	printf("Endereco Destinatario: %d\n", s1.pacote[0].obterEnderecoDestinatario());
+    s1.pacote[0].definirPayload(500);
+	printf("Payload: %d\n", s1.pacote[0].obterPayload());
+    s1.pacote[0].definirCRC(99999);
+	printf("CRC: %d\n", s1.pacote[0].obterCRC());
+    s1.pacote[0].definirLength(0064);
+
+	p1.definirEnderecoRemetente(19216801);
+	printf("Endereco Remetente: %d\n", p1.obterEnderecoRemetente());
+	p1.definirEnderecoDestinatario(19216802);
+	printf("Endereco Destinatario: %d\n", p1.obterEnderecoDestinatario());
+	p1.definirPayload(100);
+	printf("Payload: %d\n", p1.obterPayload());
+	p1.definirCRC(123456);
+	printf("CRC: %d\n", p1.obterCRC());
 
 
 

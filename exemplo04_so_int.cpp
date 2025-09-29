@@ -60,6 +60,7 @@ public:
 int main() {
     pacoteID p1;
     p1.definirID(0);
+    p1.obterID();
     int rem[16] = {0};
     int dest[16] = {0};
     int pay[100] = {0};

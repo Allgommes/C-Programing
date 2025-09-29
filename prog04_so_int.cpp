@@ -3,8 +3,8 @@
 // enderecoRemetente, enderecoDestinatario 
 // e payload e respectivos métodos públicos
 // no main, criar, preencher e apresentar instância da classe pacoteIP
- 
-class pacoteIP {
+
+class pacoteIP { //  possui um item de dado e duas funçõesmembros
 private:
 	int enderecoRemetente; //----------------
 	int enderecoDestinatario;//----------------
@@ -15,7 +15,7 @@ private:
 
 
 public:	
-	void definirEnderecoRemetente(int);
+	void definirEnderecoRemetente(int);  // funcoes menbros ou metodos
 	int obterEnderecoRemetente();
 	void definirEnderecoDestinatario(int);
 	int obterEnderecoDestinatario();
@@ -26,7 +26,7 @@ public:
 	void definirLength(int);
 	int obterLength();
 };
- 
+
 void pacoteIP::definirEnderecoRemetente(int end)
 {
 enderecoRemetente=end;

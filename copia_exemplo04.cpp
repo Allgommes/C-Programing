@@ -5,7 +5,7 @@
 // criar os metodos set e get para cada atributo
 class pacoteID {
 private:
-    int ID;                        // Identificador do pacote
+    int ID;                        // Identificador do pacote  variavel privada
     char enderecoRemetente[16];    // Endereço do remetente
     char enderecoDestinatario[16]; // Endereço do destinatário
     char payload[100];              // Conteúdo ou carga útil do pacote
@@ -13,7 +13,7 @@ private:
     
 // metodo publico
  public:
-    void definirID(int i) {
+    void definirID(int i) { // função menbro definirID
         if (i < 0) return; // Garantir que o ID não seja negativo
         ID=i;
     }
@@ -63,7 +63,7 @@ int main() {
   
     printf("Digite o endereco do remetente: ");
     scanf("%12s", rem); // Limitado a 12 caracteres para evitar buffer overflow
-    p1.definirEnderecoRemetente(rem);
+    p1.definirEnderecoRemetente(rem); // Chama o método setter
 
     printf("Digite o endereco do destinatario: ");
     scanf("%12s", dest); // Limitado a 12 caracteres para evitar buffer overflow
