@@ -1,6 +1,6 @@
 {
     "files.associations": {
-        "*.alg": "Visualg",
+        //"*.alg": "Visualg",
         "array": "cpp",
         "atomic": "cpp",
         "bit": "cpp",

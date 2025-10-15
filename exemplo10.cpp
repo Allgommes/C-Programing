@@ -27,10 +27,10 @@ int main()
 
     printf("Aluno:\n");
     printf("Idade: %d\n", a1.idade);
-    printf("Número do Aluno: %d\n", a1.numeroAluno);
+    printf("Numero do Aluno: %d\n", a1.numeroAluno);
 
     printf("\nCurso:\n");
-    printf("Código do Curso: %d\n", c1.codigoCurso);
+    printf("Codigo do Curso: %d\n", c1.codigoCurso);
     printf("Nome do Curso: %s\n", c1.nomeCurso);
 
     return 0;

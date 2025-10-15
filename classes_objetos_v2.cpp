@@ -8,3 +8,37 @@ os saldos atualizados e, por fi m, solicite que o usuário informe a quana que e
 na conta c2. Note que você deve criar essas funções-membros e chamá-las a parr da função
 main() juntamente com a criação de objetos da classe Conta. */
 
+#include <stdio.h>
+
+class Conta {
+    private:
+        double saldo;
+        public:
+        void creditar(double quantia) {
+            saldo += quantia;
+        }
+
+        double getSaldo() {
+            return saldo;
+        }
+};
+
+int main() {
+
+    double quantiaDeposito;
+    printf("Digite a quantia que deseja depositar na conta 2: ");
+    scanf("%lf", &quantiaDeposito);
+
+
+    Conta c1, c2;
+    c1.creditar(777.99);
+    c2.creditar(255.00);
+    printf("Saldo da conta 1: %.2f\n", c1.getSaldo());
+    printf("Saldo da conta 2: %.2f\n", c2.getSaldo());
+
+    c2.creditar(quantiaDeposito);
+    printf("Saldo atualizado da conta 2: %.2f\n", c2.getSaldo());
+
+    return 0;
+
+}

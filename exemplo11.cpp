@@ -2,15 +2,12 @@
 
 class Aluno {
 public:
-    int idade;
+    int idade;  // atributos
     int numeroAluno;
-
 };
-
 class Turma {
     private:
         int numero;
-
     public:
         void definirNumero(int n)
         {
@@ -23,17 +20,14 @@ class Turma {
         }
         Aluno alunos[3];
 };
-
 int main()
 {
     Turma t1;
-    t1.definirNumero(2); 
+    t1.definirNumero(2); // vetor de objetos
     t1.alunos[0].idade=25;
     t1.alunos[0].numeroAluno=1;
-
     t1.alunos[1].idade=30;
     t1.alunos[1].numeroAluno=2;
-
     t1.alunos[2].idade=40;
     t1.alunos[2].numeroAluno=3;
 
