@@ -1,0 +1,46 @@
+# Ignore everything by default
+*
+
+# But don't ignore C++ source files
+!*.cpp
+!*.cc
+!*.cxx
+!*.c++
+
+# Don't ignore C++ header files
+!*.h
+!*.hpp
+!*.hxx
+!*.h++
+
+# Don't ignore directories (so git can traverse them)
+!*/
+
+# Don't ignore this .gitignore file
+!.gitignore
+
+# Common build artifacts to explicitly ignore
+*.exe
+*.obj
+*.o
+*.lib
+*.dll
+*.pdb
+*.ilk
+*.exp
+
+# IDE specific files
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.suo
+*.user
+.vs/
+.vscode/
+
+# Compiled output
+Debug/
+Release/
+x64/
+x86/
