@@ -13,6 +13,9 @@
 !*.hxx
 !*.h++
 
+# Don't ignore markdown files (README, documentation)
+!*.md
+
 # Don't ignore directories (so git can traverse them)
 !*/
 
