@@ -13,7 +13,7 @@ private:
 	int length;
     
 public:	
-	void definirEnderecoRemetente(int);
+	void definirEnderecoRemetente(int); // prototipos dos metodos
 	int obterEnderecoRemetente();
 	void definirEnderecoDestinatario(int);
 	int obterEnderecoDestinatario();
@@ -36,7 +36,7 @@ int pacoteIP::obterEnderecoRemetente()
 return enderecoRemetente;    
 }
  
-void pacoteIP::definirEnderecoDestinatario(int dest)
+void pacoteIP::definirEnderecoDestinatario(int dest) //
 {
 enderecoDestinatario=dest;
 }
