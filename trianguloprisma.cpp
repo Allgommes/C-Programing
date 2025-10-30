@@ -38,7 +38,7 @@ public:
         }
     }
     
-    double ObterAreaBase() {
+    double ObterAreaBase() { // construtor para obter a Area
         return (baseTriangulo * alturaTriangulo) / 2.0;
     }
     
